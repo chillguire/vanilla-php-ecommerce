@@ -31,7 +31,7 @@
      function detailsmodal(id) {
           var data = {"id": id};
           jQuery.ajax({
-               url: '/eCommerce/includes/details-modal.php',
+               url: '/includes/details-modal.php',
                method: "post",
                data: data,
                success: function(data){
@@ -47,7 +47,7 @@
      function update_cart(mode, edit_id, edit_size){
           var data = {"mode" : mode, "edit_id" : edit_id, "edit_size" : edit_size}
           jQuery.ajax({
-               url: '/eCommerce/admin/parsers/update_cart.php',
+               url: '/admin/parsers/update_cart.php',
                method: "post",
                data: data,
                success: function(){
@@ -76,7 +76,7 @@
                return;
           }else{
                jQuery.ajax({
-                    url: '/eCommerce/admin/parsers/add_cart.php',
+                    url: '/admin/parsers/add_cart.php',
                     method: "post",
                     data: data,
                     success: function(){

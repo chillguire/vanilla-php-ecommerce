@@ -70,7 +70,7 @@
                <input type="submit" class="btn btn-primary" value="Login">
           </div>
      </form>
-     <p class="text-right"><a href="/eCommerce/index.php" alt="home">Visit site</a></p>
+     <p class="text-right"><a href="/index.php" alt="home">Visit site</a></p>
 </div>
 
 <?php

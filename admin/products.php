@@ -105,7 +105,7 @@
 
                     $uploadName = md5(microtime()).'.'.$fileExt;
                     $uploadPath = BASEURL.'images/products/'.$uploadName;
-                    $dbPath = '/eCommerce/images/products/'.$uploadName;
+                    $dbPath = '/images/products/'.$uploadName;
 
 
                     if($mimeType != 'image'){

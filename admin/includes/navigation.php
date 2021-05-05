@@ -1,5 +1,5 @@
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a href="/eCommerce/admin/index.php" class="navbar-brand">Introspective Admin</a>
+          <a href="/admin/index.php" class="navbar-brand">Introspective Admin</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">

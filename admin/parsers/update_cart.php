@@ -1,5 +1,5 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/eCommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/core/init.php';
 
 $mode = sanitize($_POST['mode']);
 $edit_size = sanitize($_POST['edit_size']);

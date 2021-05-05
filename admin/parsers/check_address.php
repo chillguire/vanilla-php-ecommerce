@@ -1,5 +1,5 @@
 <?php
-     require_once $_SERVER['DOCUMENT_ROOT'].'/eCommerce/core/init.php';
+     require_once $_SERVER['DOCUMENT_ROOT'].'/core/init.php';
      
      $name = sanitize($_POST['full_name']);
      $email = sanitize($_POST['email']);

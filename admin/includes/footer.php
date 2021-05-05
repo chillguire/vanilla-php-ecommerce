@@ -30,7 +30,7 @@
           data = {"parentID" : parentID, "selected" : selected };
           // AJAX REQUEST
           jQuery.ajax({
-               url: '/eCommerce/admin/parsers/child_categories.php',
+               url: '/admin/parsers/child_categories.php',
                type: 'POST',
                data: data,
                success: function(data){

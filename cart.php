@@ -258,7 +258,7 @@ if($cart_id != ''){
                'country' : jQuery('#country').val(),
           };
           jQuery.ajax({
-               url: '/eCommerce/admin/parsers/check_address.php',
+               url: '/admin/parsers/check_address.php',
                method: "post",
                data: data,
                success: function(data){
