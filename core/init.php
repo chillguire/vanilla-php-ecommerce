@@ -1,5 +1,19 @@
 <?php
-     $db = mysqli_connect('localhost','root','root','eCommerce');
+
+     $cleardb_server = 'localhost';
+	$cleardb_username = 'root';
+	$cleardb_password = 'root';
+	$cleardb_db = 'eCommerce';
+
+     if(getenv("CLEARDB_DATABASE_URL")){
+		$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+		$cleardb_server = $cleardb_url["host"];
+		$cleardb_username = $cleardb_url["user"];
+		$cleardb_password = $cleardb_url["pass"];
+		$cleardb_db = substr($cleardb_url["path"],1);
+	}
+
+     $db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
      if (mysqli_connect_errno()){
           echo 'Database connection failed with following errors: ' . mysqli_connect_error();
           die();
